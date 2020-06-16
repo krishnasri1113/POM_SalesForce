@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Functiona_Suite" duration-ms="43766" started-at="2020-06-16T05:09:44 PDT" finished-at="2020-06-16T05:10:28 PDT">
+    <groups>
+    </groups>
+    <test name="SalesForec_Application_ValidLoginTest" duration-ms="8022" started-at="2020-06-16T05:09:44 PDT" finished-at="2020-06-16T05:09:52 PDT">
+      <class name="com.salesforce.Login.SalesForceLogin">
+        <test-method status="PASS" signature="SettingtheEnvironment()[pri:0, instance:com.salesforce.Login.SalesForceLogin@30a3107a]" name="SettingtheEnvironment" is-config="true" duration-ms="1139" started-at="2020-06-16T05:09:44 PDT" finished-at="2020-06-16T05:09:45 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SettingtheEnvironment -->
+        <test-method status="PASS" signature="checkLogin_success_or_not()[pri:0, instance:com.salesforce.Login.SalesForceLogin@30a3107a]" name="checkLogin_success_or_not" duration-ms="6608" started-at="2020-06-16T05:09:45 PDT" finished-at="2020-06-16T05:09:52 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLogin_success_or_not -->
+      </class> <!-- com.salesforce.Login.SalesForceLogin -->
+    </test> <!-- SalesForec_Application_ValidLoginTest -->
+    <test name="SalesForec_Application_INValidLoginTest" duration-ms="32368" started-at="2020-06-16T05:09:53 PDT" finished-at="2020-06-16T05:10:25 PDT">
+      <class name="com.salesforce.InvalidLogin.SalesForceInvalidLogin">
+        <test-method status="PASS" signature="SettingtheEnvironment()[pri:0, instance:com.salesforce.InvalidLogin.SalesForceInvalidLogin@6b57696f]" name="SettingtheEnvironment" is-config="true" duration-ms="185" started-at="2020-06-16T05:09:53 PDT" finished-at="2020-06-16T05:09:53 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SettingtheEnvironment -->
+        <test-method status="FAIL" signature="checkLoginInvalidcredentials()[pri:0, instance:com.salesforce.InvalidLogin.SalesForceInvalidLogin@6b57696f]" name="checkLoginInvalidcredentials" duration-ms="31690" started-at="2020-06-16T05:09:53 PDT" finished-at="2020-06-16T05:10:24 PDT">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //img[@id='phHeaderLogoImage']' (tried for 30 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //img[@id='phHeaderLogoImage']' (tried for 30 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.salesforce.utilites.BrowserUtilites.waitElementToVisible(BrowserUtilites.java:41)
+at com.salesforce.POM_LoginwithInvalidCredentials.POM_InvalidLogin.loginToSalesForcewithInValidCredentials(POM_InvalidLogin.java:46)
+at com.salesforce.InvalidLogin.SalesForceInvalidLogin.checkLoginInvalidcredentials(SalesForceInvalidLogin.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@id='phHeaderLogoImage']"}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'SIRI-PC', ip: '192.168.0.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\siri\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56693}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 524abe12aa35ee809b88b31dfe99de26
+*** Element info: {Using=xpath, value=//img[@id='phHeaderLogoImage']}
+at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginInvalidcredentials -->
+      </class> <!-- com.salesforce.InvalidLogin.SalesForceInvalidLogin -->
+    </test> <!-- SalesForec_Application_INValidLoginTest -->
+    <test name="SalesForec_Application_forgotpasswordTest" duration-ms="1402" started-at="2020-06-16T05:10:25 PDT" finished-at="2020-06-16T05:10:26 PDT">
+      <class name="com.salesforce.forgotpasswordTest.forgotpassword">
+        <test-method status="PASS" signature="SettingtheEnvironment()[pri:0, instance:com.salesforce.forgotpasswordTest.forgotpassword@4abdb505]" name="SettingtheEnvironment" is-config="true" duration-ms="159" started-at="2020-06-16T05:10:25 PDT" finished-at="2020-06-16T05:10:25 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SettingtheEnvironment -->
+        <test-method status="PASS" signature="forgotpassword()[pri:0, instance:com.salesforce.forgotpasswordTest.forgotpassword@4abdb505]" name="forgotpassword" duration-ms="1238" started-at="2020-06-16T05:10:25 PDT" finished-at="2020-06-16T05:10:26 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotpassword -->
+      </class> <!-- com.salesforce.forgotpasswordTest.forgotpassword -->
+    </test> <!-- SalesForec_Application_forgotpasswordTest -->
+    <test name="SalesForec_Application_clearthepasswordTest" duration-ms="1472" started-at="2020-06-16T05:10:26 PDT" finished-at="2020-06-16T05:10:28 PDT">
+      <class name="com.salesforce.ClearPasswordTest.clearthepassword">
+        <test-method status="PASS" signature="LoadData()[pri:0, instance:com.salesforce.ClearPasswordTest.clearthepassword@42d8062c]" name="LoadData" is-config="true" duration-ms="6132" started-at="2020-06-16T05:09:38 PDT" finished-at="2020-06-16T05:09:44 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoadData -->
+        <test-method status="PASS" signature="SettingtheEnvironment()[pri:0, instance:com.salesforce.ClearPasswordTest.clearthepassword@42d8062c]" name="SettingtheEnvironment" is-config="true" duration-ms="166" started-at="2020-06-16T05:10:26 PDT" finished-at="2020-06-16T05:10:27 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SettingtheEnvironment -->
+        <test-method status="PASS" signature="Clear_the_password()[pri:0, instance:com.salesforce.ClearPasswordTest.clearthepassword@42d8062c]" name="Clear_the_password" duration-ms="1299" started-at="2020-06-16T05:10:27 PDT" finished-at="2020-06-16T05:10:28 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Clear_the_password -->
+        <test-method status="PASS" signature="quitbrowser()[pri:0, instance:com.salesforce.ClearPasswordTest.clearthepassword@42d8062c]" name="quitbrowser" is-config="true" duration-ms="758" started-at="2020-06-16T05:10:28 PDT" finished-at="2020-06-16T05:10:29 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+      </class> <!-- com.salesforce.ClearPasswordTest.clearthepassword -->
+    </test> <!-- SalesForec_Application_clearthepasswordTest -->
+  </suite> <!-- Functiona_Suite -->
+</testng-results>

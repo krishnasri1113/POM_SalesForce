@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Functiona_Suite]">
+  <listeners>
+    <listener class-name="com.salesforce.Listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="SalesForec_Application_INValidLoginTest(failed)">
+    <classes>
+      <class name="com.salesforce.InvalidLogin.SalesForceInvalidLogin">
+        <methods>
+          <include name="SettingtheEnvironment"/>
+          <include name="quitbrowser"/>
+          <include name="checkLoginInvalidcredentials"/>
+          <include name="LoadData"/>
+        </methods>
+      </class> <!-- com.salesforce.InvalidLogin.SalesForceInvalidLogin -->
+    </classes>
+  </test> <!-- SalesForec_Application_INValidLoginTest(failed) -->
+</suite> <!-- Failed suite [Functiona_Suite] -->

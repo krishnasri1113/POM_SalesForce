@@ -1,0 +1,17 @@
+2020-06-16 05:09:38 INFO  commonUtilites 39 - Config PropertyFile Path C:\Users\siri\eclipse-workspace\POM_SalesForceProject/src/main/java/Properties/Config.properties
+2020-06-16 05:09:38 INFO  clearthepassword 24 - launching the browser
+2020-06-16 05:09:46 INFO  POM_Login 35 - Entered valid username
+2020-06-16 05:09:46 INFO  POM_Login 38 - Enetered valid password
+2020-06-16 05:09:46 INFO  POM_Login 41 - login button clicked
+2020-06-16 05:09:52 INFO  SalesForceLogin 29 - log in successfully
+2020-06-16 05:09:52 INFO  SalesForceLogin 30 - Home page is displayed
+2020-06-16 05:09:52 INFO  SalesForceLogin 32 - Salesforce.com
+2020-06-16 05:09:53 INFO  POM_InvalidLogin 38 - Entered wrong username
+2020-06-16 05:09:54 INFO  POM_InvalidLogin 41 - Entered wrong password
+2020-06-16 05:09:54 INFO  POM_InvalidLogin 44 - login button clicked
+2020-06-16 05:10:26 INFO  forgotpassword 28 - clicked on forgot password
+2020-06-16 05:10:26 INFO  forgotpassword 30 - sent the username
+2020-06-16 05:10:26 INFO  forgotpassword 31 - clicked on continue button
+2020-06-16 05:10:28 INFO  clearthepassword 28 - Entered Username
+2020-06-16 05:10:28 INFO  clearthepassword 29 - Entered the password
+2020-06-16 05:10:28 INFO  clearthepassword 30 - cleared the password
